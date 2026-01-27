@@ -4219,59 +4219,6 @@ s
             </div>
           </div>
 
-          <!-- Card 3: GitHub Profile -->
-          <div class="creative-card compact-card">
-            <div class="card-background"></div>
-            <div class="card-corner-accent top-left"></div>
-            <div class="card-corner-accent bottom-right"></div>
-            
-            <div class="creative-icon compact-icon">
-              <i class="fab fa-github"></i>
-            </div>
-            <h4>GitHub Repos</h4>
-            <p>My coding projects & contributions.</p>
-            <div class="creative-links">
-              <button class="creative-link compact-btn" onclick="openGitHubModal()">
-                <i class="fas fa-code-branch"></i> Code
-              </button>
-            </div>
-          </div>
-
-          <!-- Card 4: LinkedIn Network -->
-          <div class="creative-card compact-card">
-            <div class="card-background"></div>
-            <div class="card-corner-accent top-left"></div>
-            <div class="card-corner-accent bottom-right"></div>
-            
-            <div class="creative-icon compact-icon">
-              <i class="fab fa-linkedin"></i>
-            </div>
-            <h4>LinkedIn Network</h4>
-            <p>Connect & explore my profiles.</p>
-            <div class="creative-links">
-              <button class="creative-link compact-btn" onclick="openLinkedInModal()">
-                <i class="fas fa-handshake"></i> Connect
-              </button>
-            </div>
-          </div>
-
-          <!-- Card 5: Experience & Qualifications -->
-          <div class="creative-card compact-card">
-            <div class="card-background"></div>
-            <div class="card-corner-accent top-left"></div>
-            <div class="card-corner-accent bottom-right"></div>
-            
-            <div class="creative-icon compact-icon">
-              <i class="fas fa-briefcase"></i>
-            </div>
-            <h4>Experience</h4>
-            <p>Work & education journey.</p>
-            <div class="creative-links">
-              <button class="creative-link compact-btn" onclick="openExperienceModal()">
-                <i class="fas fa-flask-vial"></i> View
-              </button>
-            </div>
-          </div>
 
           <!-- Card 6: MNC Certifications -->
           <div class="creative-card compact-card">
@@ -4283,7 +4230,7 @@ s
               <i class="fas fa-award"></i>
             </div>
             <h4>Certifications</h4>
-            <p>40+ professional achievements.</p>
+            <p> Professional achievements.</p>
             <div class="creative-links">
               <button class="creative-link compact-btn" onclick="openCertificatesModal()">
                 <i class="fas fa-certificate"></i> View
@@ -4291,23 +4238,6 @@ s
             </div>
           </div>
 
-          <!-- Card 7: Innovation Lab -->
-          <div class="creative-card compact-card">
-            <div class="card-background"></div>
-            <div class="card-corner-accent top-left"></div>
-            <div class="card-corner-accent bottom-right"></div>
-            
-            <div class="creative-icon compact-icon">
-              <i class="fas fa-flask-vial"></i>
-            </div>
-            <h4>Innovation Lab</h4>
-            <p>Creative ideas & breakthroughs.</p>
-            <div class="creative-links">
-              <button class="creative-link compact-btn" onclick="openInnovationLabModal()">
-                <i class="fas fa-lightbulb"></i> Explore
-              </button>
-            </div>
-          </div>
 
           <!-- Card 8: Professional Skills -->
           <div class="creative-card compact-card">
@@ -4719,7 +4649,7 @@ s
 						
 						<div class="resume-tabs">
 							<button class="resume-tab active" onclick="switchResumeTab('general')">
-								<i class="fas fa-briefcase"></i> General Resume
+								<i class="fas fa-briefcase"></i> Education & Experience
 							</button>
 							<button class="resume-tab" onclick="switchResumeTab('management')">
 								<i class="fas fa-sitemap"></i> Management Focus
@@ -4744,9 +4674,9 @@ s
 								<div class="resume-card resume-card-animate" style="animation-delay: 0.1s;">
 									<div class="resume-badge">Latest</div>
 									<div class="resume-icon">
-										<i class="fas fa-star"></i>
+										<i class="fas fa-building"></i>
 									</div>
-                  <h3>Comprehensive General Information </h3>
+                  <h3>Education </h3>
 
                   <p class="resume-desc">Complete overview of all skills, experiences, and qualifications across all domains.</p>
                   <div class="resume-highlights">
@@ -4759,29 +4689,27 @@ s
                     <a href="https://drive.google.com/file/d/1LArW-IKU_OPha6OOEPH5JOPt18PzRcGO/view?usp=drive_link" class="resume-download-btn" onclick="downloadResume('general', event)">
                       <i class="fas fa-download"></i> Download PDF
                     </a>
-                    <button class="resume-download-btn" onclick="openEducationModal()" style="background: linear-gradient(135deg, #10b981, #059669); cursor: pointer; border: none;">
-                      <i class="fas fa-graduation-cap"></i> View Education
-                    </button>
                   </div>
 								</div>
 
 								<div class="resume-card resume-card-animate" style="animation-delay: 0.2s;">
 									<div class="resume-badge">Detailed</div>
-									<div class="resume-icon">
-										<i class="fas fa-list"></i>
+									<div class="creative-icon compact-icon">
+                                        <i class="fas fa-briefcase"></i>
 									</div>
-									<h3>Extended Resume</h3>
+									<h3>Experience </h3>
 									<p class="resume-desc">In-depth version with project details and comprehensive achievements.</p>
 									<div class="resume-highlights">
 										<span><i class="fas fa-check"></i> All Projects Included</span>
 										<span><i class="fas fa-check"></i> Detailed Accomplishments</span>
 										<span><i class="fas fa-check"></i> Complete Skills</span>
 									</div>510+
-									<a href="https://drive.google.com/file/d/1aJ0AD29ytxS8eUWawrzQt51Wsu1IhCuS/view?usp=sharing" class="resume-download-btn" onclick="downloadResume('extended', event)">
-										<i class="fas fa-download"></i> Download PDF
-									</a>
+                                        <div class="creative-links">
+                                        <button class="creative-link compact-btn" onclick="openExperienceModal()">
+                                            <i class="fas fa-flask-vial"></i> View
+                                        </button>
+                                      </div>
 								</div>
-
 								<div class="resume-card resume-card-animate" style="animation-delay: 0.3s;">
 									<div class="resume-badge">One Page</div>
 									<div class="resume-icon">
@@ -6384,46 +6312,37 @@ s
                         <span class="portfolio-close" onclick="closePortfolioModal()">&times;</span>
                         <h2>My Portfolio Websites</h2>
                         <div class="portfolio-grid">
-                            <!-- Old Portfolio 1 -->
-                            <div class="portfolio-item">
+                            
+                            <!-- New Current Portfolio -->
+                            <div class="portfolio-item featured">
                                 <div class="portfolio-header">
-                                    <h3>Classic Portfolio</h3>
-                                    <span class="portfolio-badge old">Old Version</span>
+                                    <h3>1st Portfolio</h3>
+                                    <span class="portfolio-badge new">2025-26</span>
                                 </div>
-                                <p>My original portfolio design showcasing early projects and skills.</p>
-                                <a href="https://tse09.github.io/._/" target="_blank" class="portfolio-btn">
+                                <p>My latest portfolio with modern design, all certifications, projects, and experiences.</p>
+                                 <a href="https://tse09.github.io/._/" target="_blank" class="portfolio-btn">
                                     <i class="fas fa-external-link-alt"></i> Visit Classic
                                 </a>
                             </div>
 
-                            <!-- Old Portfolio 2 -->
-                            <div class="portfolio-item">
+                            <!-- New Current Portfolio -->
+                            <div class="portfolio-item featured">
                                 <div class="portfolio-header">
-                                    <h3>Creative Portfolio</h3>
-                                    <span class="portfolio-badge old">Old Version</span>
+                                    <h3>2nd Portfolio</h3>
+                                    <span class="portfolio-badge new">2025-26</span>
                                 </div>
-                                <p>Creative design-focused portfolio with interactive elements and animations.</p>
+                                <p>My latest portfolio with modern design, all certifications, projects, and experiences.</p>
                                 <a href="https://vanshsm28.github.io/-.Portfolio/" target="_blank" class="portfolio-btn">
-                                    <i class="fas fa-external-link-alt"></i> Visit Creative
+                                    <i class="fas fa-star"></i> Visit Classic
                                 </a>
                             </div>
 
+                            
                             <!-- New Current Portfolio -->
                             <div class="portfolio-item featured">
                                 <div class="portfolio-header">
-                                    <h3>Current Portfolio</h3>
-                                    <span class="portfolio-badge new">Latest Version</span>
-                                </div>
-                                <p>My latest portfolio with modern design, all certifications, projects, and experiences.</p>
-                                <a href="#home" class="portfolio-btn primary">
-                                    <i class="fas fa-star"></i> You Are Here
-                                </a>
-                            </div>
-                            <!-- New Current Portfolio -->
-                            <div class="portfolio-item featured">
-                                <div class="portfolio-header">
-                                    <h3>New  Portfolio</h3>
-                                    <span class="portfolio-badge new">Latest Version</span>
+                                    <h3>Update Portfolio</h3>
+                                    <span class="portfolio-badge new">2025-26</span>
                                 </div>
                                 <p>My latest portfolio with modern design, all certifications, projects, and experiences.</p>
                                 <a href="https://tse09.github.io/P/" class="portfolio-btn">
@@ -6434,7 +6353,7 @@ s
                             <div class="portfolio-item featured">
                                 <div class="portfolio-header">
                                     <h3>New  Portfolio</h3>
-                                    <span class="portfolio-badge new">Latest Version</span>
+                                    <span class="portfolio-badge new">2025-26</span>
                                 </div>
                                 <p>My latest portfolio with modern design, all certifications, projects, and experiences.</p>
                                 <a href="https://tse-ind.github.io/vansh.in/" class="portfolio-btn">
@@ -6442,6 +6361,17 @@ s
                                 </a>
                             </div>
 
+                            <!-- New Current Portfolio -->
+                            <div class="portfolio-item featured">
+                                <div class="portfolio-header">
+                                    <h3>Project</h3>
+                                    <span class="portfolio-badge new">2025-26</span>
+                                </div>
+                                <p>My latest projects.</p>
+                                <a href="https://tse09.github.io/Project/" class="portfolio-btn primary">
+                                    <i class="fas fa-external-link-alt"></i>Projects 
+                                </a>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -9913,7 +9843,7 @@ s
                                     <span>Innovation Strategy</span>
                                   </div>
                                   <div style="display:flex;gap:8px;flex-wrap:wrap;margin-top:15px;">
-                                    <button class="exp-link-btn" onclick="openInnovationLabModal()" style="padding:10px 16px;border-radius:8px;border:1px solid #3b82f6;color:var(--primary-color);font-weight:600;text-decoration:none;font-size:0.85rem;transition:all 0.3s ease;background:transparent;cursor:pointer;" onmouseover="this.style.background='#3b82f6'; this.style.color='white';" onmouseout="this.style.background='transparent'; this.style.color='var(--primary-color)';">
+                                    <button class="creative-link compact-btn" onclick="openInnovationLabModal()"> 
                                       <i class="fas fa-microscope"></i> View Innovation Lab
                                     </button>
                                     
