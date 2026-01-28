@@ -3,6 +3,7 @@
 
 <head>
     <link rel="icon" href="https://uploads.onecompiler.io/445w2qj6u/44bhj9kar/images.png" type="image/x-icon">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
   <link rel="stylesheet" href="style.css" />
     <title>Mr.Vansh Jaiswal</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
@@ -100,37 +101,48 @@
         }
         /* Navbar */
         header {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            background-color: white;
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-            z-index: 1000;
-        }
-        .container {
-            width: 90%;
-            max-width: 1200px;
-            margin: 0 auto;
-        }
-        .container {
-            width: 90%;
-            max-width: 1200px;
-            margin: 0 auto;
-        }
-        .navbar {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 20px 0;
-        }   
-        .navbar  {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-s
-            padding: 20px 0;
-        }
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: var(--white);
+    box-shadow: 0 2px 6px rgba(0,0,0,.08);
+    z-index: 1000;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+}
+
+.logo {
+    font-size: 1.4rem;
+    font-weight: 800;
+    color: var(--primary);
+}
+
+.nav-links {
+    display: flex;
+    gap: 24px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    font-weight: 600;
+    color: var(--text);
+}
+
+.nav-links a:hover {
+    color: var(--primary);
+}
+
+.hamburger {
+    display: none;
+    font-size: 1.6rem;
+    cursor: pointer;
+}
 
         .logo {
             font-size: 1.5rem;
@@ -3441,10 +3453,10 @@ s
                 <i class="fab fa-github"></i>
             </a>
 
-                 <a href="https://facebook.com/your-profile" target="_blank" rel="noopener noreferrer" class="social-link-btn facebook-btn" title="Facebook" style="width: 55px; height: 55px; display: flex; align-items: center; justify-content: center; border-radius: 100%; background: linear-gradient(135deg, #1877F2 0%, #0C63D4 100%);">
+                 <a href="https://facebook.com/your-profile" target="_blank" rel="noopener noreferrer" class="social-link-btn facebook-btn" title="Facebook" style="width: 65px; height: 65px; display: flex; align-items: center; justify-content: center; border-radius: 100%; background: linear-gradient(135deg, #1877F2 0%, #0C63D4 100%);">
                 <i class="fab fa-facebook"></i>
                 </a>
-                 <a href="https://discord.com/users/your-discord-id" target="_blank" rel="noopener noreferrer" class="social-link-btn discord-btn" title="Discord" style="width: 55px; height: 55px; display: flex; align-items: center; justify-content: center; border-radius: 100%; background: linear-gradient(135deg, #7289DA 0%, #5865F2 100%);">
+                 <a href="https://discord.com/users/your-discord-id" target="_blank" rel="noopener noreferrer" class="social-link-btn discord-btn" title="Discord" style="width: 65px; height: 65px; display: flex; align-items: center; justify-content: center; border-radius: 100%; background: linear-gradient(135deg, #7289DA 0%, #5865F2 100%);">
                 <i class="fab fa-discord"></i>
                 </a>
             <a href="https://wa.me/918960416293" target="_blank" rel="noopener noreferrer" class="social-link-btn whatsapp-btn" title="WhatsApp">
@@ -4041,7 +4053,7 @@ s
                 }
 
                 .creative-card {
-                    background: linear-gradient(135deg, #ffffff 0%, #f8fbff 100%);
+                    background: linear-gradient(135deg, #9d9cbd 0%, #627ea1 100%);
                     border-radius: 16px;
                     padding: 28px;
                     border: 2px solid rgba(59, 130, 246, 0.1);
@@ -4179,64 +4191,663 @@ s
                     z-index: -1;
                 }
             </style>
+            
  <div class="creative-grid" style="grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); gap: 20px; margin-top: 30px; margin-bottom: 30px;">
-        <!-- Responsive Creative Cards Grid -->
-        <div class="creative-grid" style="grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 16px; margin-top: 20px; margin-bottom: 20px;">
-
-          <!-- Card 1: Portfolio Website -->
-          <div class="creative-card compact-card">
-            <div class="card-background"></div>
+        
+     <!-- Card 1: Portfolio Website -->
+        <div class="creative-card compact-card">
+            <center><div class="card-background"></div>
             <div class="card-corner-accent top-left"></div>
             <div class="card-corner-accent bottom-right"></div>
             
             <div class="creative-icon compact-icon">
-              <i class="fas fa-globe"></i>
+                <i class="fas fa-globe"></i>
             </div>
             <h4>My Portfolio</h4>
-            <p>Explore my complete digital presence.</p>
+            <p>Explore my complete digital presence.</p></center>
             <div class="creative-links">
-              <button class="creative-link compact-btn" onclick="openPortfolioModal()">
-                <i class="fas fa-external-link-alt"></i> View
-              </button>
+                <button class="creative-link compact-btn" onclick="openPortfolioModal()">
+                    <i class="fas fa-external-link-alt"></i> View
+                </button>
             </div>
-          </div>
-
-          <!-- Card 2: Resume Collection -->
-          <div class="creative-card compact-card">
-            <div class="card-background"></div>
+        </div>
+<!-- Card 3: Certifications -->
+        <div class="creative-card compact-card">
+            <center><div class="card-background"></div>
             <div class="card-corner-accent top-left"></div>
             <div class="card-corner-accent bottom-right"></div>
             
             <div class="creative-icon compact-icon">
-              <i class="fas fa-file-pdf"></i>
-            </div>
-            <h4>Resume & CV</h4>
-            <p>Multiple tailored versions for you.</p>
-            <div class="creative-links">
-              <button class="creative-link compact-btn" onclick="openResumeModal()">
-                <i class="fas fa-download"></i> Download
-              </button>
-            </div>
-          </div>
-
-
-          <!-- Card 6: MNC Certifications -->
-          <div class="creative-card compact-card">
-            <div class="card-background"></div>
-            <div class="card-corner-accent top-left"></div>
-            <div class="card-corner-accent bottom-right"></div>
-            
-            <div class="creative-icon compact-icon">
-              <i class="fas fa-award"></i>
+                <i class="fas fa-award"></i>
             </div>
             <h4>Certifications</h4>
-            <p> Professional achievements.</p>
+            <p>Professional achievements.</p></center>
             <div class="creative-links">
-              <button class="creative-link compact-btn" onclick="openCertificatesModal()">
-                <i class="fas fa-certificate"></i> View
-              </button>
+                <button class="creative-link compact-btn" onclick="openCertificatesModal()">
+                    <i class="fas fa-certificate"></i> View
+                </button>
             </div>
-          </div>
+        </div>
+        <!-- Card 2: Resume Collection -->
+        <div class="creative-card compact-card">
+            <center><div class="card-background"></div>
+            <div class="card-corner-accent top-left"></div>
+            <div class="card-corner-accent bottom-right"></div>
+            
+            <div class="creative-icon compact-icon">
+                <i class="fas fa-file-pdf"></i>
+            </div>
+            <h4>Resume & CV</h4>
+            <p>Multiple tailored versions for you.</p></center>
+            <div class="creative-links">
+                <button class="creative-link compact-btn" onclick="openResumeModal()">
+                    <i class="fas fa-download"></i> Download
+                </button>
+            </div>
+        </div>
+
+    </div>
+
+    <style>
+        /* Compact Creative Card Styles - Centered & Responsive */
+        .creative-card.compact-card {
+            min-height: 220px;
+            padding: 20px;
+            position: relative;
+            overflow: hidden;
+            border-radius: 16px;
+            background: linear-gradient(135deg, #ffffff 0%, #f8fbff 100%);
+            border: 2px solid rgba(59, 130, 246, 0.1);
+            box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+            transition: all 0.4s cubic-bezier(0.23, 1, 0.32, 1);
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .creative-card.compact-card:hover {
+            transform: translateY(-12px) scale(1.02) rotate(-1deg);
+            box-shadow: 0 24px 48px rgba(59, 130, 246, 0.25);
+            border-color: rgba(59, 130, 246, 0.3);
+            background: linear-gradient(135deg, #ffffff 0%, rgba(248, 251, 255, 0.8) 100%);
+        }
+
+        /* Card Background Effect */
+        .card-background {
+            position: absolute;
+            top: -50%;
+            right: -50%;
+            width: 200%;
+            height: 200%;
+            background: radial-gradient(circle, rgba(59, 130, 246, 0.05) 0%, transparent 70%);
+            opacity: 0;
+            transition: opacity 0.4s ease;
+        }
+
+        .creative-card.compact-card:hover .card-background {
+            opacity: 1;
+        }
+
+        /* Corner Accents */
+        .card-corner-accent {
+            position: absolute;
+            width: 40px;
+            height: 40px;
+            opacity: 0;
+            transition: all 0.4s ease;
+        }
+
+        .card-corner-accent.top-left {
+            top: -20px;
+            left: -20px;
+            border-top: 3px solid var(--primary-color);
+            border-left: 3px solid var(--primary-color);
+            border-radius: 20px 0 0 0;
+        }
+
+        .card-corner-accent.bottom-right {
+            bottom: -20px;
+            right: -20px;
+            border-bottom: 3px solid var(--accent-color);
+            border-right: 3px solid var(--accent-color);
+            border-radius: 0 0 20px 20px;
+        }
+
+        .creative-card.compact-card:hover .card-corner-accent {
+            opacity: 0.8;
+        }
+
+        .creative-card.compact-card:hover .card-corner-accent.top-left {
+            top: -5px;
+            left: -5px;
+        }
+
+        .creative-card.compact-card:hover .card-corner-accent.bottom-right {
+            bottom: -5px;
+            right: -5px;
+        }
+
+        /* Compact Icon */
+        .compact-icon {
+            font-size: 2.2rem !important;
+            margin-bottom: 12px !important;
+            animation: iconFloat 3s ease-in-out infinite;
+        }
+
+        @keyframes iconFloat {
+            0%, 100% { transform: translateY(0) scale(1); }
+            50% { transform: translateY(-8px) scale(1.05); }
+        }
+
+        /* Card Heading */
+        .creative-card.compact-card h4 {
+            margin: 0 0 8px;
+            font-size: 1.1rem;
+            font-weight: 700;
+            color: var(--dark-color);
+            background: linear-gradient(135deg, var(--primary-color), var(--primary-dark));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            position: relative;
+            z-index: 2;
+        }
+
+        /* Card Description */
+        .creative-card.compact-card p {
+            margin: 0 0 12px;
+            font-size: 0.85rem;
+            color: var(--text-color);
+            line-height: 1.4;
+            position: relative;
+            z-index: 2;
+        }
+
+        /* Compact Button Styles */
+        .creative-link.compact-btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 6px;
+            padding: 10px 16px;
+            font-size: 0.85rem;
+            font-weight: 700;
+            border-radius: 10px;
+            background: linear-gradient(135deg, var(--primary-color), var(--primary-dark));
+            color: white;
+            border: none;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            box-shadow: 0 6px 16px rgba(59, 130, 246, 0.25);
+            position: relative;
+            z-index: 2;
+            white-space: nowrap;
+        }
+
+        .creative-link.compact-btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 28px rgba(59, 130, 246, 0.35);
+        }
+
+        .creative-link.compact-btn:active {
+            transform: scale(0.96);
+        }
+
+        .creative-link.compact-btn i {
+            font-size: 0.9rem;
+        }
+
+        /* Creative Links Container */
+        .creative-card.compact-card .creative-links {
+            display: flex;
+            gap: 8px;
+            flex-wrap: wrap;
+            position: relative;
+            z-index: 2;
+        }
+
+        /* Tablet Responsive */
+        @media (max-width: 768px) {
+            .creative-grid {
+                grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)) !important;
+                gap: 16px !important;
+                margin: 30px auto !important;
+                padding: 0 16px !important;
+            }
+
+            .creative-card.compact-card {
+                min-height: 200px;
+                padding: 18px;
+            }
+
+            .compact-icon {
+                font-size: 2rem !important;
+                margin-bottom: 10px !important;
+            }
+
+            .creative-card.compact-card h4 {
+                font-size: 1rem;
+                margin-bottom: 6px;
+            }
+
+            .creative-card.compact-card p {
+                font-size: 0.8rem;
+                margin-bottom: 10px;
+            }
+
+            .creative-link.compact-btn {
+                padding: 8px 12px;
+                font-size: 0.8rem;
+            }
+        }
+
+        /* Mobile Responsive */
+        @media (max-width: 480px) {
+            .creative-grid {
+                grid-template-columns: 1fr !important;
+                gap: 12px !important;
+                margin: 20px auto !important;
+                padding: 0 12px !important;
+                max-width: 100% !important;
+                width: calc(100% - 24px) !important;
+            }
+
+            .creative-card.compact-card {
+                min-height: 180px;
+                padding: 16px;
+            }
+
+            .compact-icon {
+                font-size: 1.8rem !important;
+            }
+
+            .creative-card.compact-card h4 {
+                font-size: 0.95rem;
+            }
+
+            .creative-card.compact-card p {
+                font-size: 0.75rem;
+            }
+
+            .creative-link.compact-btn {
+                padding: 8px 12px;
+                font-size: 0.75rem;
+                width: 100%;
+            }
+
+            .card-corner-accent {
+                width: 30px;
+                height: 30px;
+            }
+
+            .creative-card.compact-card:hover {
+                transform: translateY(-8px) scale(1.01) rotate(-0.5deg);
+            }
+        }
+
+        /* Micro Mobile */
+        @media (max-width: 360px) {
+            .creative-grid {
+                grid-template-columns: 1fr !important;
+                gap: 10px !important;
+                margin: 15px auto !important;
+                padding: 0 10px !important;
+            }
+
+            .creative-card.compact-card {
+                min-height: 160px;
+                padding: 14px;
+            }
+
+            .compact-icon {
+                font-size: 1.6rem !important;
+                margin-bottom: 8px !important;
+            }
+
+            .creative-card.compact-card h4 {
+                font-size: 0.9rem;
+                margin-bottom: 5px;
+            }
+
+            .creative-card.compact-card p {
+                font-size: 0.7rem;
+                margin-bottom: 8px;
+            }
+
+            .creative-link.compact-btn {
+                padding: 7px 10px;
+                font-size: 0.7rem;
+            }
+        }
+
+        /* Animation for card appearance */
+        .creative-card.compact-card {
+            animation: cardAppear 0.6s ease-out forwards;
+            opacity: 0;
+            transform: translateY(20px);
+        }
+
+        @keyframes cardAppear {
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* Stagger animation for multiple cards */
+        .creative-card.compact-card:nth-child(1) { animation-delay: 0.1s; }
+        .creative-card.compact-card:nth-child(2) { animation-delay: 0.2s; }
+        .creative-card.compact-card:nth-child(3) { animation-delay: 0.3s; }
+    </style>
+    <style>
+        /* Creative Grid Container - Fixed Layout */
+        .creative-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 24px;
+            margin-top: 40px;
+            margin-bottom: 40px;
+            padding: 0 20px;
+            max-width: 1400px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        /* Creative Card - Unified Styling */
+        .creative-card {
+            background: linear-gradient(135deg, #ffffff 0%, #f8fbff 100%);
+            border-radius: 18px;
+            padding: 32px 28px;
+            border: 2px solid rgba(59, 130, 246, 0.1);
+            position: relative;
+            overflow: hidden;
+            transition: all 0.4s cubic-bezier(0.23, 1, 0.32, 1);
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.08);
+            display: flex;
+            flex-direction: column;
+            min-height: 340px;
+            gap: 16px;
+        }
+
+        /* Card Background Animation */
+        .creative-card::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            right: -50%;
+            width: 200%;
+            height: 200%;
+            background: radial-gradient(circle, rgba(59, 130, 246, 0.1) 0%, transparent 70%);
+            opacity: 0;
+            transition: opacity 0.4s ease;
+        }
+
+        .creative-card:hover::before {
+            opacity: 1;
+        }
+
+        /* Card Hover Effect */
+        .creative-card:hover {
+            transform: translateY(-12px) scale(1.02) rotate(-1deg);
+            box-shadow: 0 28px 64px rgba(59, 130, 246, 0.2), 0 0 40px rgba(245, 158, 11, 0.1);
+            border-color: rgba(59, 130, 246, 0.3);
+            background: linear-gradient(135deg, #ffffff 0%, rgba(240, 249, 255, 0.95) 100%);
+        }
+
+        /* Creative Icon */
+        .creative-icon {
+            font-size: 2.5rem;
+            background: linear-gradient(135deg, var(--primary-color), var(--accent-color));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            margin-bottom: 8px;
+            position: relative;
+            z-index: 1;
+            animation: iconFloat 3s ease-in-out infinite;
+        }
+
+        @keyframes iconFloat {
+            0%, 100% {
+                transform: translateY(0) scale(1);
+            }
+            50% {
+                transform: translateY(-10px) scale(1.08);
+            }
+        }
+
+        /* Card Heading */
+        .creative-card h4 {
+            margin: 0;
+            color: var(--dark-color);
+            font-size: 1.35rem;
+            font-weight: 700;
+            position: relative;
+            z-index: 1;
+            line-height: 1.3;
+        }
+
+        /* Card Description */
+        .creative-card p {
+            margin: 0;
+            color: var(--text-color);
+            font-size: 0.95rem;
+            line-height: 1.6;
+            position: relative;
+            z-index: 1;
+            flex-grow: 1;
+        }
+
+        /* Creative Links Container */
+        .creative-links {
+            display: flex;
+            gap: 12px;
+            flex-wrap: wrap;
+            position: relative;
+            z-index: 1;
+            margin-top: auto;
+        }
+
+        /* Creative Link Button */
+        .creative-link {
+            padding: 11px 18px;
+            border-radius: 8px;
+            border: 2px solid var(--primary-color);
+            color: var(--primary-color);
+            background: transparent;
+            text-decoration: none;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            font-size: 0.9rem;
+            flex: 1;
+            min-width: 140px;
+            justify-content: center;
+        }
+
+        .creative-link:hover {
+            background: var(--primary-color);
+            color: white;
+            transform: translateX(4px);
+            box-shadow: 0 8px 20px rgba(59, 130, 246, 0.3);
+        }
+
+        .creative-link:active {
+            transform: scale(0.98);
+        }
+
+        /* Responsive Design */
+        @media (max-width: 1024px) {
+            .creative-grid {
+                grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+                gap: 20px;
+                padding: 0 16px;
+            }
+
+            .creative-card {
+                padding: 28px 24px;
+                min-height: 320px;
+                gap: 14px;
+            }
+
+            .creative-card h4 {
+                font-size: 1.25rem;
+            }
+
+            .creative-card p {
+                font-size: 0.9rem;
+            }
+
+            .creative-link {
+                padding: 10px 16px;
+                font-size: 0.85rem;
+                min-width: 130px;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .creative-grid {
+                grid-template-columns: 1fr;
+                gap: 16px;
+                padding: 0 12px;
+                margin-top: 30px;
+                margin-bottom: 30px;
+            }
+
+            .creative-card {
+                padding: 24px 20px;
+                min-height: 300px;
+                gap: 12px;
+            }
+
+            .creative-icon {
+                font-size: 2.2rem;
+                margin-bottom: 6px;
+            }
+
+            .creative-card h4 {
+                font-size: 1.2rem;
+            }
+
+            .creative-card p {
+                font-size: 0.88rem;
+                line-height: 1.5;
+            }
+
+            .creative-links {
+                gap: 10px;
+            }
+
+            .creative-link {
+                padding: 10px 14px;
+                font-size: 0.8rem;
+                min-width: 120px;
+            }
+
+            .creative-card:hover {
+                transform: translateY(-10px) scale(1.01) rotate(-0.5deg);
+            }
+        }
+
+        @media (max-width: 480px) {
+            .creative-grid {
+                grid-template-columns: 1fr;
+                gap: 14px;
+                padding: 0 8px;
+                margin-top: 24px;
+                margin-bottom: 24px;
+            }
+
+            .creative-card {
+                padding: 20px 16px;
+                min-height: 280px;
+                gap: 10px;
+            }
+
+            .creative-icon {
+                font-size: 2rem;
+                margin-bottom: 4px;
+            }
+
+            .creative-card h4 {
+                font-size: 1.1rem;
+            }
+
+            .creative-card p {
+                font-size: 0.85rem;
+            }
+
+            .creative-links {
+                gap: 8px;
+                flex-direction: column;
+            }
+
+            .creative-link {
+                width: 100%;
+                padding: 12px;
+                font-size: 0.8rem;
+                min-width: unset;
+            }
+
+            .creative-card:hover {
+                transform: translateY(-8px) scale(1);
+            }
+        }
+
+        /* Accessibility Focus */
+        .creative-link:focus-visible {
+            outline: 3px solid var(--primary-color);
+            outline-offset: 2px;
+        }
+
+        /* Animation Delay for Stagger Effect */
+        .creative-card:nth-child(1) {
+            animation: cardSlideIn 0.6s ease forwards;
+        }
+
+        .creative-card:nth-child(2) {
+            animation: cardSlideIn 0.6s ease 0.1s forwards;
+        }
+
+        .creative-card:nth-child(3) {
+            animation: cardSlideIn 0.6s ease 0.2s forwards;
+        }
+
+        .creative-card:nth-child(4) {
+            animation: cardSlideIn 0.6s ease 0.3s forwards;
+        }
+
+        .creative-card:nth-child(5) {
+            animation: cardSlideIn 0.6s ease 0.4s forwards;
+        }
+
+        .creative-card:nth-child(6) {
+            animation: cardSlideIn 0.6s ease 0.5s forwards;
+        }
+
+        .creative-card:nth-child(7) {
+            animation: cardSlideIn 0.6s ease 0.6s forwards;
+        }
+
+        .creative-card:nth-child(8) {
+            animation: cardSlideIn 0.6s ease 0.7s forwards;
+        }
+
+        @keyframes cardSlideIn {
+            from {
+                opacity: 0;
+                transform: translateY(30px) scale(0.95);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0) scale(1);
+            }
+        }
+    </style>
+
 
        
         <style>
@@ -4624,7 +5235,7 @@ s
 				<div id="resumeModal" class="resume-modal">
 					<div class="resume-modal-content">
 						<span class="resume-close" onclick="closeResumeModal()">&times;</span>
-						<h2><i class="fas fa-file-alt"></i> Professional Resumes</h2>
+						<h2><i class="fas fa-file-alt"></i> Professional Profile </h2>
 						
 						<div class="resume-tabs">
 							<button class="resume-tab active" onclick="switchResumeTab('general')">
@@ -4669,8 +5280,9 @@ s
                       <i class="fas fa-graduation-cap"></i> View
                     </button>
                   </div>
+
                  
-								</div>
+			            </div>
 
 								<div class="resume-card resume-card-animate" style="animation-delay: 0.2s;">
 									<div class="resume-badge">Detailed</div>
@@ -4726,7 +5338,7 @@ s
 										<span><i class="fas fa-check"></i> Team Management</span>
 										<span><i class="fas fa-check"></i> Strategic Planning</span>
 									</div>
-									<a href="https://drive.google.com/file/d/1LArW-IKU_OPha6OOEPH5JOPt18PzRcGO/view?usp=sharing" class="resume-download-btn" onclick="https://drive.google.com/file/d/1LArW-IKU_OPha6OOEPH5JOPt18PzRcGO/view?usp=sharing">
+									<a href="https://drive.google.com/file/d/1aJ0AD29ytxS8eUWawrzQt51Wsu1IhCuS/view?usp=sharing" class="resume-download-btn" onclick="https://drive.google.com/file/d/1aJ0AD29ytxS8eUWawrzQt51Wsu1IhCuS/view?usp=sharing">
 										<i class="fas fa-download"></i> Download PDF
                                     </a>
 								</div>
